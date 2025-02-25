@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay! ❤️</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        h1 {
+            font-size: 40px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .big-heart {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: relative;
+            transform: rotate(-45deg);
+            animation: heartbeat 1.5s infinite alternate;
+        }
+
+        .big-heart::before,
+        .big-heart::after {
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .big-heart::before {
+            top: -75px;
+            left: 0;
+        }
+
+        .big-heart::after {
+            left: 75px;
+            top: 0;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1) rotate(-45deg);
+            }
+            100% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Friendship is love in its purest form. So glad to have you in my life!❤️</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="big-heart"></div>
+</body>
+</html>
